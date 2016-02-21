@@ -9,5 +9,7 @@ Start backing up your palo alto firewalls.
 
 # Configuration
 To Configure the script, set the config file path. By default this is the current directory.
+
 Run the script once.
+
 You will get a message about a configuration file not being found, and the script will create one for you.
