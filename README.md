@@ -16,13 +16,14 @@ You will get a message about a configuration file not being found, and the scrip
 The configuration file is an XML file.
 
 The configuration directives are wrapped inside a <config> tag; each one is described below.
+```xml
+  <paloip> - This tag is used to hold the IP address of the palo alto device to be backed up.
 
-  '<paloip> - This tag is used to hold the IP address of the palo alto device to be backed up.
+  <apikey> - This tag is used to hold the API key that has been configured on the palo alto device.
 
-  '<apikey> - This tag is used to hold the API key that has been configured on the palo alto device.
+  <logfile> - This tag is used to hold the name of the log file (including path) for example: c:\logfile.log
 
-  '<logfile> - This tag is used to hold the name of the log file (including path) for example: c:\logfile.log
-
-  '<logfilesize>ADD - This tag is used to hold the maximum size of the logfile. The logfile will be checked and rolled when it reaches this size. Note that the check only occurs once each time the script is run.
+  <logfilesize>ADD - This tag is used to hold the maximum size of the logfile. The logfile will be checked and rolled when it reaches this size. Note that the check only occurs once each time the script is run.
 
   <outputfile> - This is the name of the outputfile (i.e. the backup). It should contain the path, like the logfile. For example: c:\backup.xml
+```
